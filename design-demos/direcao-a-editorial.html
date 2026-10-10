@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[RASCUNHO A] Editorial – Vanessa Araújo Estética</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bege:#fdebdb;--branco:#fff;--ouro:#f8e157;--ouro-esc:#d4a017;--txt:#4a3b32}
+*{box-sizing:border-box;margin:0}
+body{font:400 16px/1.7 Montserrat,sans-serif;color:var(--txt);background:var(--bege)}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.05}
+.faixa{background:var(--txt);color:var(--bege);text-align:center;font-size:.8rem;padding:.4rem}
+.marca{display:flex;align-items:center;gap:.6rem;padding:1rem 1.25rem;font-family:'Cormorant Garamond',serif;font-size:1.25rem}
+.marca img{width:44px}
+.hero{position:relative;padding:3rem 1.25rem 4rem;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-20%;top:-5%;width:90%;aspect-ratio:1;background:url(../imagens/logo.png) center/contain no-repeat;opacity:.13}
+.hero h1{font-size:clamp(3.4rem,15vw,8rem);max-width:10ch;position:relative}
+.hero h1 em{color:var(--ouro-esc)}
+.hero p{max-width:34ch;margin:1.5rem 0 2rem;position:relative}
+.btn{display:inline-block;background:var(--ouro);color:var(--txt);font-weight:600;text-decoration:none;padding:.95rem 1.6rem;border-radius:999px;border:1px solid var(--ouro-esc)}
+section{padding:3.5rem 1.25rem;border-top:1px solid var(--ouro-esc)}
+.rot{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--ouro-esc);font-weight:600}
+h2{font-size:clamp(2.4rem,9vw,4.5rem);margin:.5rem 0 2rem}
+.lista{list-style:none;padding:0}
+.lista li{display:grid;grid-template-columns:2.5rem 1fr;gap:.5rem 1rem;padding:1.25rem 0;border-bottom:1px solid rgba(212,160,23,.5)}
+.lista b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--ouro-esc);font-weight:500}
+.lista h3{font-size:1.7rem}
+.lista small{display:block;margin-top:.3rem;font-weight:500}
+.sobre{background:var(--branco)}
+.foto{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,#f3d9bf,#fdebdb);display:grid;place-items:center;text-align:center;font-size:.85rem;padding:2rem;margin-bottom:2rem}
+@media(min-width:768px){
+ .marca,.hero,section{padding-left:max(2rem,8vw);padding-right:max(2rem,8vw)}
+ .sobre .col{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;align-items:center}
+ .foto{margin:0}
+ .lista li{grid-template-columns:4rem 1fr 14rem}
+ .lista small{margin:0;text-align:right}
+}
+</style>
+</head>
+<body>
+<div class="faixa">RASCUNHO A · Editorial · todo o conteúdo é [EXEMPLO]</div>
+<header class="marca"><img src="../imagens/logo.png" alt="Monograma VA"><span>Vanessa Araújo Estética</span></header>
+<main>
+<section class="hero" style="border-top:0">
+ <span class="rot">Esteticista · Natal/RN</span>
+ <h1>Cuidar da pele é um <em>ritual</em></h1>
+ <p>[EXEMPLO] Atendimento delicado e personalizado, com tempo para ouvir você.</p>
+ <a class="btn" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+</section>
+<section>
+ <span class="rot">01 · Serviços</span>
+ <h2>Cuidados com a pele e o corpo</h2>
+ <ul class="lista">
+  <li><b>I</b><div><h3>[EXEMPLO] Limpeza de pele</h3><p>Descrição breve do procedimento.</p></div><small>a partir de R$ [EXEMPLO]</small></li>
+  <li><b>II</b><div><h3>[EXEMPLO] Massagem relaxante</h3><p>Descrição breve do procedimento.</p></div><small>a partir de R$ [EXEMPLO]</small></li>
+  <li><b>III</b><div><h3>[EXEMPLO] Tratamento facial</h3><p>Descrição breve do procedimento.</p></div><small>a partir de R$ [EXEMPLO]</small></li>
+ </ul>
+</section>
+<section class="sobre">
+ <div class="col">
+  <div class="foto">[EXEMPLO] Foto da Vanessa<br>(a enviar)</div>
+  <div>
+   <span class="rot">02 · Sobre</span>
+   <h2>Olá, eu sou a Vanessa</h2>
+   <p>[EXEMPLO] Aqui entra a história da Vanessa, a formação e os diferenciais do atendimento.</p>
+  </div>
+ </div>
+</section>
+</main>
+</body>
+</html>

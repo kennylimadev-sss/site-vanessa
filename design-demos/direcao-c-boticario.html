@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[RASCUNHO C] Rótulo de boticário – Vanessa Araújo Estética</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bege:#fdebdb;--branco:#fff;--ouro:#f8e157;--ouro-esc:#d4a017;--txt:#4a3b32}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 16px/1.7 Montserrat,sans-serif;color:var(--txt);background:var(--bege)}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.1}
+.aviso{background:var(--txt);color:var(--bege);font-size:.8rem;text-align:center;padding:.4rem}
+nav{position:sticky;top:0;background:var(--bege);border-bottom:1px solid var(--ouro-esc);display:flex;gap:1.25rem;overflow-x:auto;padding:.8rem 1.25rem;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;z-index:2}
+nav a{color:var(--txt);text-decoration:none}
+nav img{width:28px;margin-right:auto}
+.moldura{margin:1.25rem;border:1px solid var(--ouro-esc);outline:1px solid var(--ouro-esc);outline-offset:5px;padding:2rem 1.25rem;background:var(--branco)}
+.moldura.b{background:var(--bege)}
+.vers{font-variant:small-caps;letter-spacing:.2em;font-size:.85rem;color:var(--txt);font-weight:600}
+h1{font-size:clamp(2.6rem,10vw,5rem);margin:.75rem 0 1rem;text-transform:uppercase;letter-spacing:.04em}
+h2{font-size:2.2rem;margin:.5rem 0 1.5rem;text-transform:uppercase;letter-spacing:.06em}
+.btn{display:inline-block;margin-top:1.5rem;background:var(--ouro);color:var(--txt);font-weight:600;text-decoration:none;padding:.9rem 1.5rem;border-radius:6px;border:1px solid var(--ouro-esc)}
+.fichas{display:grid;gap:1rem}
+.ficha{border:1px solid var(--ouro-esc);border-radius:6px;padding:1.25rem;display:grid;grid-template-columns:3rem 1fr;gap:.25rem 1rem;background:var(--branco)}
+.ficha b{grid-row:span 3;font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--ouro-esc);line-height:1}
+.ficha h3{font-size:1.4rem;text-transform:uppercase;letter-spacing:.05em}
+.ficha small{font-weight:600}
+.foto{height:200px;border:1px solid var(--ouro-esc);border-radius:6px;background:repeating-linear-gradient(45deg,#fbe0c8,#fbe0c8 10px,#fdebdb 10px,#fdebdb 20px);display:grid;place-items:center;font-size:.85rem;margin-bottom:1.5rem}
+@media(min-width:768px){
+ nav{position:fixed;inset:0 auto 0 0;width:200px;flex-direction:column;border-bottom:0;border-right:1px solid var(--ouro-esc);padding:2rem 1.5rem;gap:1.5rem}
+ nav img{width:64px;margin:0 0 1rem}
+ body{padding-left:200px}
+ .moldura{margin:2rem;padding:3.5rem}
+ .fichas{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="aviso">RASCUNHO C · Rótulo de boticário · todo o conteúdo é [EXEMPLO]</div>
+<nav>
+ <img src="../imagens/logo.png" alt="Monograma VA">
+ <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a>
+</nav>
+<main>
+<section class="moldura" id="inicio">
+ <span class="vers">Esteticista · Natal/RN</span>
+ <h1>Vanessa Araújo Estética</h1>
+ <p>[EXEMPLO] Cuidados com a pele e o corpo, feitos com calma e atenção.</p>
+ <a class="btn" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+</section>
+<section class="moldura b" id="servicos">
+ <span class="vers">Nº 01</span>
+ <h2>Serviços</h2>
+ <div class="fichas">
+  <article class="ficha"><b>1</b><h3>[EXEMPLO] Limpeza de pele</h3><p>Descrição breve.</p><small>a partir de R$ [EXEMPLO]</small></article>
+  <article class="ficha"><b>2</b><h3>[EXEMPLO] Massagem</h3><p>Descrição breve.</p><small>a partir de R$ [EXEMPLO]</small></article>
+  <article class="ficha"><b>3</b><h3>[EXEMPLO] Tratamento facial</h3><p>Descrição breve.</p><small>a partir de R$ [EXEMPLO]</small></article>
+ </div>
+</section>
+<section class="moldura" id="sobre">
+ <span class="vers">Nº 02</span>
+ <h2>Sobre</h2>
+ <div class="foto">[EXEMPLO] Foto da Vanessa (a enviar)</div>
+ <p>[EXEMPLO] História, formação e diferenciais do atendimento.</p>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esteticista em Natal/RN | Vanessa Araújo Estética</title>
+<meta name="description" content="Vanessa Araújo, esteticista em Natal/RN. Uma experiência para conhecer os cuidados com a pele e o corpo. Agende pelo WhatsApp.">
+<link rel="icon" type="image/png" href="imagens/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vanessa Araújo Estética | Esteticista em Natal/RN">
+<meta property="og:description" content="Cuidados com a pele e o corpo em Natal/RN. Agende pelo WhatsApp.">
+<meta property="og:image" content="imagens/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-fundo="claro">
+
+<!-- Ícones de traço fino usados no bloco de contato -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.500 8.500 0 1 1 8 19.500z"/><path d="M9 8.500c0 3.500 3 6.500 6.500 6.500l1-1.500-2-1-1 .8c-1-.4-1.900-1.300-2.300-2.300l.8-1-1-2z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.500 6.500h.01"/></symbol>
+</svg>
+
+<canvas id="particulas" aria-hidden="true"></canvas>
+<div class="brilho" aria-hidden="true"></div>
+
+<header class="topo">
+  <a class="topo-marca" href="#inicio"><img src="imagens/logo.png" alt=""><span>Vanessa Araújo Estética</span></a>
+  <a class="btn btn-peq" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar</a>
+</header>
+
+<!-- Navegação por pontos (computador) -->
+<nav class="pontos-nav" aria-label="Cenas do site">
+  <a href="#inicio" title="Início"><span>Início</span></a>
+  <a href="#sobre" title="Sobre"><span>Sobre</span></a>
+  <a href="#servicos" title="Serviços"><span>Serviços</span></a>
+  <a href="#resultados" title="Resultados"><span>Resultados</span></a>
+  <a href="#depoimentos" title="Depoimentos"><span>Depoimentos</span></a>
+  <a href="#perguntas" title="Perguntas"><span>Perguntas</span></a>
+  <a href="#contato" title="Contato"><span>Contato</span></a>
+</nav>
+
+<main>
+  <!-- 1. Início -->
+  <section class="cena hero" id="inicio" data-fundo="claro">
+    <img class="camada marca-grande" data-prof="26" src="imagens/logo.png" alt="">
+    <span class="orbe o1 camada" data-prof="-18"></span>
+    <span class="orbe o2 camada" data-prof="14"></span>
+    <div class="hero-texto">
+      <h1>
+        <span class="w" style="--i:3">Um</span>
+        <span class="w" style="--i:4">momento</span>
+        <span class="w" style="--i:5">só</span>
+        <span class="w" style="--i:6"><em>seu</em></span>
+      </h1>
+      <p class="w sub" style="--i:8">Cuidado feminino com atenção, delicadeza e propósito.</p>
+      <a class="btn w" style="--i:9" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    </div>
+    <a class="rolar" href="#sobre" aria-label="Rolar para baixo"><i></i></a>
+  </section>
+
+  <!-- 2. Sobre: a foto se abre até ocupar a tela -->
+  <section class="pin pin-zoom" id="sobre" data-fundo="bege">
+    <div class="sticky sobre-grade">
+      <!-- Foto vertical em imagens/imagem-sobre.jpg. Se o arquivo não existir, fica o espaço de exemplo -->
+      <div class="retrato"><span aria-hidden="true">[EXEMPLO]<br>Foto da Vanessa<br>(a enviar)</span><img src="imagens/imagem-sobre.jpg" alt="Vanessa Araújo, esteticista" width="1400" height="2100" onerror="this.remove()"></div>
+      <div class="sobre-card">
+        <h2>Sobre mim</h2>
+        <p>A beleza, para mim, começa no cuidado. Há 8 anos atuo na área da estética. Formada em Estética e Cosmetologia, meu trabalho é guiado pela leveza no atendimento e pela atenção a cada detalhe. Faço tudo com excelência, sempre priorizando a saúde, a qualidade e resultados que valorizem a beleza única de cada mulher que passa por mim.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Serviços -->
+  <section class="cena servicos" id="servicos" data-fundo="claro">
+    <div class="cab" data-r><h2>Cuidados para você</h2></div>
+    <!-- Grade de cards: todos visíveis de uma vez. O link de cada um ganha o nome do serviço na mensagem (js/main.js) -->
+    <div class="grade-servicos">
+      <article class="cartao" data-r><span class="num">1</span><h3>Limpeza de pele</h3><p>Procedimento que remove cravos e impurezas, desobstrui os poros e ajuda a manter a pele limpa, hidratada e com viço saudável. Assim, sua pele absorve melhor os ativos do skincare.</p><a class="mais" data-servico="Limpeza de pele" href="https://wa.me/5584999988091" target="_blank" rel="noopener">Agendar este cuidado</a></article>
+      <article class="cartao alt" data-r><span class="num">2</span><h3>Brow Lamination e Lash Lifting</h3><p>Realça a beleza e autoestima, valorizando as sobrancelhas preenchidas e os cílios pretinhos e curvados com delicadeza e harmonia.</p><a class="mais" data-servico="Brow Lamination e Lash Lifting" href="https://wa.me/5584999988091" target="_blank" rel="noopener">Agendar este cuidado</a></article>
+      <article class="cartao alt" data-r><span class="num">3</span><h3>Drenagem Linfática método MF</h3><p>Técnica que mistura relaxamento e drenagem: estimula a circulação linfática e sanguínea, reduz o inchaço e melhora intestinal, respiração e contorno corporal, proporcionando uma sensação de relaxamento, leveza e bem-estar.</p><a class="mais" data-servico="Drenagem Linfática método MF" href="https://wa.me/5584999988091" target="_blank" rel="noopener">Agendar este cuidado</a></article>
+      <article class="cartao" data-r><span class="num">4</span><h3>Extensão de cílios</h3><p>Trás volume para os seus cílios com fios tecnológicos mas sem pesar. Analiso a sua personalidade, seu gosto, faço o visagismo e escolhemos a melhor técnica para você, valorizando o seu olhar com naturalidade e harmonia.</p><a class="mais" data-servico="Extensão de cílios" href="https://wa.me/5584999988091" target="_blank" rel="noopener">Agendar este cuidado</a></article>
+      <!-- Aviso: os 4 cards são só os principais -->
+      <div class="cartao cartao-mais" data-r><span class="num">+</span><h3>Não encontrou o que procurava?</h3><p>Estes são os cuidados mais procurados, mas tenho outras opções que podem ser perfeitas para você. Me conte o que você gostaria de melhorar e eu indico o ideal para o seu caso.</p><a class="btn" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20n%C3%A3o%20encontrei%20o%20que%20procurava.%20Gostaria%20de%20conversar%20sobre%20outras%20op%C3%A7%C3%B5es." target="_blank" rel="noopener">Fale comigo no WhatsApp</a></div>
+    </div>
+  </section>
+
+  <!-- 5. Resultados: colunas com velocidades diferentes -->
+  <section class="cena" id="resultados" data-fundo="claro">
+    <div class="cab" data-r><h2>Cuidado que se vê</h2></div>
+    <div class="colunas">
+      <div class="col" style="--v:-.06">
+        <div class="zoom"><img src="imagens/imagem-resultados-1.jpg" width="828" height="1472" loading="lazy" alt="Foto de resultado em sobrancelhas, em comparação antes e depois"></div>
+        <div class="zoom"><img src="imagens/imagem-resultados-3.jpg" width="1000" height="1000" loading="lazy" alt="Foto em close do rosto de uma cliente"></div>
+      </div>
+      <div class="col" style="--v:.08">
+        <div class="zoom"><img src="imagens/imagem-resultados-2.jpg" width="1000" height="1249" loading="lazy" alt="Foto de resultado em sobrancelhas, vista de perto"></div>
+        <div class="zoom"><img src="imagens/imagem-resultados-4.jpg" width="1000" height="1333" loading="lazy" alt="Retrato de uma cliente de cabelo cacheado"></div>
+      </div>
+      <div class="col" style="--v:-.12">
+        <div class="zoom"><img src="imagens/imagem-resultados-5.jpg" width="1000" height="1333" loading="lazy" alt="Retrato de uma cliente sorrindo levemente"></div>
+        <div class="zoom"><img src="imagens/imagem-resultados-6.jpg" width="1000" height="1333" loading="lazy" alt="Foto de resultado em cuidado corporal"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Depoimentos -->
+  <section class="cena centrado" id="depoimentos" data-fundo="bege">
+    <div class="cab so-leitor"><h2>Depoimentos</h2></div>
+    <div class="citacoes" data-r>
+      <blockquote class="ativo">“Vanessa é uma excelente profissional em todos os serviços que faz. Além de ser uma pessoa incrível.”</blockquote>
+      <blockquote>“Vanessa além de ser super competente, é um ser humano do bem, com brilho próprio. Me sinto muito a vontade durante suas massagens, ela sabe o que faz!”</blockquote>
+      <blockquote>“Vanessa é uma excelente profissional, Massagem muito completa e relaxante. Cuidados Desde a preparação do ambiente (iluminação,climatização,cheirinho…) até as técnicas muito bem aplicadas. Melhor massagem que já recebi, vim de São Paulo a Natal e ter me deparado com um trabalho tão completo me fez vê que valeu a pena investir meu tempo.”</blockquote>
+    </div>
+    <div class="bolinhas" role="tablist" aria-label="Escolher depoimento"></div>
+  </section>
+
+  <!-- 7. Perguntas frequentes -->
+  <section class="cena" id="perguntas" data-fundo="claro">
+    <div class="cab" data-r><h2>Ficou com dúvida?</h2></div>
+    <div class="faq" data-r>
+      <details><summary>Como saber se preciso de uma limpeza de pele?</summary><p>Sinais como cravos, excesso de oleosidade, poros obstruídos e textura irregular podem indicar que sua pele precisa de cuidados mais específicos. No entanto, cada pele tem suas particularidades. Por isso, realizo uma avaliação individualizada para entender suas necessidades e indicar o tratamento mais adequado, sempre priorizando a saúde, o equilíbrio e a beleza natural da sua pele.</p></details>
+      <details><summary>Como a drenagem linfática do método MF pode me ajudar?</summary><p>Se você sente inchaço, sensação de peso nas pernas, cansaço físico ou lipedema essa drenagem linfática pode ser uma aliada no seu cuidado e bem-estar. Nela inclui manobras que vão diminuir a retenção favorecendo leveza e relaxamento, além de ajudar a melhorar o funcionamento intestinal. Também técnicas que associam a respiração e melhora do contorno corporal. Meu objetivo é proporcionar mais leveza, conforto e bem-estar, respeitando as necessidades e particularidades de cada corpo. Por exemplo em gestantes, a massagem é totalmente personalizada.</p></details>
+      <details><summary>Quanto tempo dura o efeito da Brow Lamination e Lash Lifting?</summary><p>De 40 a 60 dias, a química permanece no fio. O efeito permanece por mais tempo quando você tem os cuidados após a química. Os fios devem passar por uma nutrição em cabine após 15 dias da química e manter a hidratação em casa com o kit home care.</p></details>
+      <details><summary>Quanto tempo dura a extensão de cílios e quando devo fazer a manutenção?</summary><p>Dura em torno de 28 de retenção. Mas é indicado realizar a manutenção com 21 dias para não danificar o fio natural nem a saúde ocular.</p></details>
+    </div>
+  </section>
+
+  <!-- 8. Contato -->
+  <section class="cena centrado contato" id="contato" data-fundo="bege">
+    <div class="cab" data-r>
+      <h2 class="grande">Pronta para viver essa experiência?</h2>
+      <a class="btn btn-grande" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    </div>
+    <!-- Dados de contato junto do mapa, num bloco só -->
+    <div class="onde" data-r>
+      <div class="onde-info">
+        <p class="rotulo">Onde estamos</p>
+        <ul class="info">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Endereço</strong><span>Av. Bernardo Vieira, 3081, Lagoa Seca, Natal/RN</span></div></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-relogio"/></svg><div><strong>Horário de atendimento</strong><span>Segunda a sexta: 9h às 18h<br>Sábado: 9h às 16h</span></div></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-zap"/></svg><div><strong>WhatsApp</strong><a href="https://wa.me/5584999988091" target="_blank" rel="noopener">(84) 99998-8091</a></div></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-insta"/></svg><div><strong>Instagram</strong><a href="https://www.instagram.com/vanessaaraujoestetica__" target="_blank" rel="noopener">@vanessaaraujoestetica_</a></div></li>
+        </ul>
+      </div>
+      <iframe class="mapa" title="Mapa com a localização da Vanessa Araújo Estética" loading="lazy"
+        src="https://www.google.com/maps?q=Av.+Bernardo+Vieira,+3081,+Lagoa+Seca,+Natal,+RN&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <img src="imagens/logo.png" alt="Monograma VA">
+  <p class="marca">Vanessa Araújo Estética</p>
+  <p><a href="https://www.instagram.com/vanessaaraujoestetica__" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5584999988091" target="_blank" rel="noopener">WhatsApp</a></p>
+  <p class="copy">© <span id="ano"></span> Vanessa Araújo Estética. Todos os direitos reservados.</p>
+</footer>
+
+<a class="zap-fixo" href="https://wa.me/5584999988091?text=Ol%C3%A1%2C%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.1 0-.3 0-.4s-.6-1.400-.8-1.900c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.800 11.800 0 0 0 4.500 4c1.700.7 2.300.8 3.200.6a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

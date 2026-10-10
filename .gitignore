@@ -1,0 +1,10 @@
+﻿# Pastas e arquivos que não vão para o GitHub
+.claude/
+
+# Fotos originais (pesadas e com dados da câmera). O site usa as versões otimizadas .jpg
+imagens/imagem-sobre.webp.jpeg
+imagens/imagem-resultados-*.webp
+
+# Sistema
+Thumbs.db
+.DS_Store
